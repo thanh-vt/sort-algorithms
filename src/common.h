@@ -24,6 +24,6 @@ void TaoFileNgauNhien(int n);
 
 void Lietke(int A[], long n);
 
-void GhiChunkFile(int* A, long n, FILE* f);
+void write_sorted_chunks_to_file(int* A, long n, FILE* f);
 
 #endif //COMMON_H

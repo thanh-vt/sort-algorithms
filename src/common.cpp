@@ -36,14 +36,14 @@ void TaoFileNgauNhien(int n) {
 void Lietke(int *A, long n) {
     for (long i = 0; i < n; i++) {
         int x = A[i];
-        printf("%8d", x);
+        printf("%8d ", x);
         if (i + 1 % 10 == 0) cout << endl;
     }
 }
 
-void GhiChunkFile(int *A, long n, FILE *f) {
+void write_sorted_chunks_to_file(int *A, long n, FILE *f) {
     for (long i = 0; i < n; i++) {
-        fprintf(f, "%8d", A[i]);
+        fprintf(f, "%8d ", A[i]);
     }
     fprintf(f, "\n");
 }
